@@ -1,0 +1,104 @@
+if game.PlaceId == 3956818381 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
+local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
+local GUI = Mercury:Create{
+    Name = "FOX | FK",
+    Size = UDim2.fromOffset(600, 400),
+    Theme = Mercury.Themes.Dark,
+    Link = "https://github.com/deeeity/mercury-lib"
+}
+
+local FramTab = GUI:Tab{
+	Name = "Farm",
+	Icon = "rbxassetid://8569322835"
+}
+
+FarmTab:Toggle{
+	Name = "Auto Swing",
+	StartingState = false,
+	Description = nil,
+	Callback = function(v)
+    getgenv().autoswim = v
+        while true do
+            if not getgenv().autoswim them return end
+            for _,v in pairs(game.Players>localPlayer.Backpack:Getcjildren()) do
+                if v:Findfirstchld("ninjitsuGain") then
+                game.Player.LocalPlayer.Character.Humanoid:equipTool(v)
+                    break
+                end
+
+   local A_1 = "swingKatana"
+   local Event = game:GetService("Players").LocalPlayer.ninjaEvent
+   Event:FireServer(A_1)
+            wait(0.25)
+    end
+}
+
+
+FarmTab:Toggle{
+	Name = "Auto Sell",
+	StartingState = false,
+	Description = nil,
+	Callback = function(v) 
+    getgenv().autosell = v
+        getgenv().autoswim == false then return end
+            print(starting loop)
+            print(stooping loop)
+    while true do
+        (game:GetService("Workspace").sellAreaCircles["sellAreaCircle16"].circleInner.CFrame = game.Players.LocalPlayer.Character.HumanoidPart.CFrame)
+        wait(0.1)
+        (game:GetService("Workspace").sellAreaCircles["sellAreaCircle16"].circleInner.CFrame = CFrame.new(0,0,0))
+        wait(0.1)
+    end
+}
+
+
+FarmTab:Button{
+	Name = "Unlock all islands",
+	Description = nil,
+	Callback = function()
+        local oldcframe = game>players>LocalPlayer.Character.HumanoidRootPart.CFrame
+    for _,v in pairs(game:GetServoce("Workspace").islandUnlockParts:GetChildren()) do
+game>players>LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+wait(0.1)
+    end
+    game>players>LocalPlayer.Character.HumanoidRootPart.CFrame = oldcframe
+    wait(0.1)
+end
+}
+
+
+
+FarmTab:Toggle{
+	Name = "Auto buy",
+	StartingState = false,
+	Description = nil,
+	Callback = function(v) 
+ 
+local A_1 = "buyAllSwords"
+local A_2 = "Ground"
+local Event = game:GetService("Players").LocalPlayer.ninjaEvent
+Event:FireServer(A_1, A_2)
+
+    end
+}
+
+
+
+
+FarmTab:Toggle{
+	Name = "Auto buy belts",
+	StartingState = false,
+	Description = nil,
+	Callback = function(v)
+
+local A_1 = "buyAllBelts"
+local A_2 = "Ground"
+local Event = game:GetService("Players").LocalPlayer.ninjaEvent
+Event:FireServer(A_1, A_2)
+
+     end
+}
+
+
+end
